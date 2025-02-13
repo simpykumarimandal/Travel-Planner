@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='map.css') }}" />
+  </head>
+  <body>
+    <section id="home">
+      <h1 class="h-primary">Trip Explorer</h1>
+      <form id="tripForm" action="/plan" method="POST">
+        <label class="days">Days:</label>
+        <input
+          type="number"
+          id="days"
+          name="days"
+          placeholder="Enter number of days"
+          required
+        />
+
+        <label class="location">Location:</label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          placeholder="City"
+          required
+        />
+
+        <label class="budget">Budget:</label>
+        <input
+          type="number"
+          id="budget"
+          name="budget"
+          placeholder="Rs"
+          required
+        />
+
+        <h3>Interest:</h3>
+        <select id="interest" name="interest" required>
+          <option value="Shopping & Markets">Shopping & Markets</option>
+          <option value="Cultural & Heritage Sites">
+            Cultural & Heritage Sites
+          </option>
+          <option value="Natural Landscapes">Natural Landscapes</option>
+          <option value="Religious & Spiritual Pilgrimages">
+            Religious & Spiritual Pilgrimages
+          </option>
+          <option value="Adventure & Outdoor Activities">
+            Adventure & Outdoor Activities
+          </option>
+          <option value="Sightseeing & Exploration">
+            Sightseeing & Exploration
+          </option>
+          <option value="Arts, Science & Literature Attractions">
+            Arts, Science & Literature Attractions
+          </option>
+        </select>
+
+        <h4 class="num_destinations_per_day">
+          Number of Destinations per Day:
+        </h4>
+        <input
+          type="number"
+          id="num_destinations_per_day"
+          name="num_destinations_per_day"
+          placeholder="1, 2, or 3"
+          required
+        />
+
+        <button type="submit" class="btn">PLAN NOW</button>
+      </form>
+    </section>
+  </body>
+</html>

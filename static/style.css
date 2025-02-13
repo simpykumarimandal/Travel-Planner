@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("/static/plane.jpg"); /* Background image applied here */
+
+  background-size: cover;
+  background-position: center;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+  background-color: rgba(148, 188, 233, 0.6);
+  font-family: "Madimi One", sans-serif; /* Updated font family */
+  font-size: 2rem; /* Updated font size */
+}
+
+#home p {
+  color: rgb(254, 254, 252);
+  text-align: center;
+  font-family: Arial, sans-serif; /* Updated font family */
+  font-size: 1rem; /* Updated font size */
+  text-shadow: 2px 2px 2px #c40233;
+  background-color: rgba(163, 25, 25, 0.35);
+}
+
+.h-primary {
+  font-size: 0.7rem;
+  padding: 8px;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.days {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin: 17px;
+  border: 2px solid white;
+  color: aliceblue;
+  font-size: 1rem;
+  width: 100px;
+  background-color: rgba(122, 172, 229, 0.5);
+  padding: 6px 40px;
+  border-radius: 9px;
+  box-shadow: 0 2px 5px rgba(122, 172, 229, 0.5);
+}
+::placeholder {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(127, 192, 242);
+}
+
+.location {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin: 17px;
+  border: 2px solid white;
+  color: aliceblue;
+  font-size: 1rem;
+  width: 100px;
+  background-color: rgba(122, 172, 229, 0.5);
+  padding: 6px 40px;
+  border-radius: 9px;
+  box-shadow: 0 2px 5px rgba(122, 172, 229, 0.5);
+}
+::placeholder {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(127, 192, 242);
+}
+
+.budget {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin: 17px;
+  border: 2px solid white;
+  color: aliceblue;
+  font-size: 1rem;
+  width: 100px;
+  background-color: rgba(122, 172, 229, 0.5);
+  padding: 6px 40px;
+  border-radius: 9px;
+  box-shadow: 0 2px 5px rgba(122, 172, 229, 0.5);
+}
+
+input[type="number"],
+input[type="text"] {
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+::placeholder {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(127, 192, 242);
+}
+h2 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 17px;
+  border: 2px solid white;
+  color: aliceblue;
+  font-size: 1rem;
+  width: 100px;
+  background-color: rgba(122, 172, 229, 0.5);
+  padding: 6px 40px;
+  border-radius: 9px;
+  box-shadow: 0 2px 5px rgba(122, 172, 229, 0.5);
+}
+
+h3 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 17px;
+  border: 2px solid white;
+  color: aliceblue;
+  font-size: 1rem;
+  width: 100px;
+  background-color: rgba(122, 172, 229, 0.5);
+  padding: 6px 40px;
+  border-radius: 9px;
+  box-shadow: 0 2px 5px rgba(122, 172, 229, 0.5);
+}
+
+h4 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 17px;
+  border: 2px solid white;
+  color: aliceblue;
+  font-size: 1rem;
+  width: 100px;
+  background-color: rgba(122, 172, 229, 0.5);
+  padding: 6px 40px;
+  border-radius: 9px;
+  box-shadow: 0 2px 5px rgba(122, 172, 229, 0.5);
+}
+
+#dropdown1 ul {
+  list-style: none;
+  background-color: rgba(122, 172, 229, 0.5);
+}
+
+#dropdown1 ul li {
+  display: inline-block;
+  position: relative;
+}
+
+#dropdown1 ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: rgb(249, 249, 250);
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.66rem;
+}
+
+#dropdown1 ul li ul.dropdown li {
+  display: block;
+}
+
+#dropdown1 ul li ul.dropdown {
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+#dropdown1 ul li a:hover {
+  background-color: rgba(107, 227, 248, 0.79);
+}
+
+#dropdown1 ul li:hover ul.dropdown {
+  display: block;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgba(122, 172, 229, 0.5);
+  color: white;
+  margin: 17px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border-radius: 18px;
+}
+/* Your existing CSS */
+/* Add the following styles for the dropdown */
+.dropdown-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: rgba(122, 172, 229, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+#dropdown1:hover .dropdown {
+  display: block;
+}

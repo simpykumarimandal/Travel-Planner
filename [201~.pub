@@ -1,7 +1,0 @@
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFVYic1pgsp3dJ8wWTx7tZikmyhDWiXklEdkvZUcVMpQ simpymandal01@gmail.com
-
-
-
-
-
-[200~ssh-keygen -t ed25519 -C simpymandal01@gmail.com
